@@ -9,7 +9,7 @@ namespace Movies.API.Controllers
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -43,16 +43,16 @@ namespace Movies.API.Controllers
             return weatherForecast;
         }
 
-        [HttpPost(]
+        [HttpPost]
         public string HelloWorld()
         {
             return "Hello World";
         }
 
-        [HttpGet("{int}"]
+        [HttpGet("{int}")]
         public string HelloWorld2(int a)
         {
-            return "Hello world 2";
+            return "Hello World";
         }
 
         private string GetHelloWorld()
